@@ -1,0 +1,121 @@
+{
+	"StorageDescriptor": {
+		"cols": {
+			"FieldSchema": [
+				{
+					"name": "customernumber",
+					"type": "bigint",
+					"comment": ""
+				},
+				{
+					"name": "customername",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "contactlastname",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "contactfirstname",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "phone",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "addressline1",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "addressline2",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "city",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "state",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "postalcode",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "country",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "salesrepemployeenumber",
+					"type": "string",
+					"comment": ""
+				},
+				{
+					"name": "creditlimit",
+					"type": "double",
+					"comment": ""
+				}
+			]
+		},
+		"location": "s3://teste-refera-camc/input/customers.csv",
+		"inputFormat": "org.apache.hadoop.mapred.TextInputFormat",
+		"outputFormat": "org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat",
+		"compressed": "false",
+		"numBuckets": "-1",
+		"SerDeInfo": {
+			"name": "",
+			"serializationLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+			"parameters": {
+				"field.delim": ","
+			}
+		},
+		"bucketCols": [],
+		"sortCols": [],
+		"parameters": {
+			"skip.header.line.count": "1",
+			"sizeKey": "16886",
+			"objectCount": "1",
+			"UPDATED_BY_CRAWLER": "teste-refera-ed",
+			"CrawlerSchemaSerializerVersion": "1.0",
+			"recordCount": "118",
+			"averageRecordSize": "143",
+			"CrawlerSchemaDeserializerVersion": "1.0",
+			"compressionType": "none",
+			"classification": "csv",
+			"columnsOrdered": "true",
+			"areColumnsQuoted": "false",
+			"delimiter": ",",
+			"typeOfData": "file"
+		},
+		"SkewedInfo": {},
+		"storedAsSubDirectories": "false"
+	},
+	"parameters": {
+		"skip.header.line.count": "1",
+		"sizeKey": "16886",
+		"objectCount": "1",
+		"UPDATED_BY_CRAWLER": "teste-refera-ed",
+		"CrawlerSchemaSerializerVersion": "1.0",
+		"recordCount": "118",
+		"averageRecordSize": "143",
+		"CrawlerSchemaDeserializerVersion": "1.0",
+		"compressionType": "none",
+		"classification": "csv",
+		"columnsOrdered": "true",
+		"areColumnsQuoted": "false",
+		"delimiter": ",",
+		"typeOfData": "file"
+	}
+}
